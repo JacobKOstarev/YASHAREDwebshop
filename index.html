@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YASHA | ателье</title>
-    <!-- PWA manifest (создайте файл manifest.json отдельно) -->
+ 
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#c41e1e">
     <style>
-        /* ===== СБРОС И ОСНОВЫ ===== */
+
         * {
             margin: 0;
             padding: 0;
@@ -25,7 +25,7 @@
             transition: background 0.3s ease, color 0.3s ease;
         }
 
-        /* Красная тема */
+
         body.red-theme {
             background: #1a0a0a;
             color: #fff0f0;
@@ -56,7 +56,7 @@
             --white: #f0f0f0;
         }
 
-        /* ===== КАСТОМНЫЙ КУРСОР ===== */
+
         .cursor {
             width: 20px;
             height: 20px;
@@ -77,7 +77,7 @@
             mix-blend-mode: normal;
         }
 
-        /* ===== ФОНОВАЯ АНИМАЦИЯ СЛОВ ===== */
+ 
         .word-background {
             position: fixed;
             top: 0;
@@ -159,14 +159,14 @@
             100% { transform: translateX(-20%) rotate(0deg); }
         }
 
-        /* ===== ОСНОВНОЙ КОНТЕНТ ПОВЕРХ ФОНА ===== */
+     
         .content {
             position: relative;
             z-index: 2;
             pointer-events: auto;
         }
 
-        /* ===== МОДАЛЬНЫЕ ОКНА ===== */
+ 
         .modal {
             display: none;
             position: fixed;
@@ -228,7 +228,7 @@
             margin-bottom: 10px;
         }
 
-        /* Cookie-уведомление */
+
         .cookie-notice {
             position: fixed;
             bottom: 20px;
@@ -269,7 +269,7 @@
             to { transform: translateY(0); }
         }
 
-        /* Страницы */
+
         .page {
             display: none;
             opacity: 0;
@@ -281,7 +281,7 @@
             opacity: 1;
         }
 
-        /* ===== НАВИГАЦИЯ ===== */
+
         .top-bar {
             background: var(--red);
             color: white;
@@ -367,7 +367,7 @@
             color: var(--red);
         }
 
-        /* ===== ИКОНКИ (нарисованные CSS) ===== */
+
         .icon {
             display: inline-block;
             width: 24px;
@@ -641,7 +641,7 @@
             transform: translateY(-2px) scale(1.1);
         }
 
-        /* Кнопка гамбургер-меню */
+
         .mobile-menu-toggle {
             display: none;
             background: transparent;
@@ -656,7 +656,7 @@
             color: var(--red);
         }
 
-        /* ===== HERO С ВИДЕО ===== */
+
         .hero {
             height: 800px;
             position: relative;
@@ -774,7 +774,7 @@
             box-shadow: 0 20px 40px rgba(196,30,30,0.5);
         }
 
-        /* ===== АНИМАЦИИ ===== */
+       
         @keyframes slideInDown {
             from { transform: translateY(-100%); }
             to { transform: translateY(0); }
@@ -796,7 +796,7 @@
             to { opacity: 1; transform: scale(1); box-shadow: 0 20px 40px -10px rgba(196,30,30,0.3); }
         }
 
-        /* Анимация вращения иконок */
+ 
         @keyframes rotateIn {
             from {
                 opacity: 0;
@@ -808,7 +808,7 @@
             }
         }
 
-        /* ===== ОБЩИЕ СТИЛИ ДЛЯ СЕКЦИЙ ===== */
+      
         .categories, .featured, .features, .newsletter,
         .catalog-page, .about-page, .contacts-page, .cart-page {
             padding: 120px 40px;
@@ -1090,7 +1090,7 @@
             text-decoration: underline;
         }
 
-        /* ===== СТРАНИЦА КАТАЛОГА ===== */
+   
         .catalog-page {
             display: grid;
             grid-template-columns: 280px 1fr;
@@ -1150,7 +1150,7 @@
             cursor: pointer;
         }
 
-        /* Кнопка сброса фильтров */
+
         .reset-filters-btn {
             background: transparent;
             border: 1px solid var(--red);
@@ -1168,7 +1168,7 @@
             color: var(--black);
         }
 
-        /* ===== СТРАНИЦА О НАС ===== */
+   
         .about-page .about-hero {
             text-align: left;
             margin-bottom: 60px;
@@ -1239,7 +1239,7 @@
             letter-spacing: 1px;
         }
 
-        /* ===== СТРАНИЦА КОНТАКТЫ ===== */
+       
         .contacts-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1291,7 +1291,7 @@
             background: var(--red-bright);
         }
 
-        /* ===== СТРАНИЦА КОРЗИНЫ ===== */
+
         .cart-page h2 {
             text-align: left;
         }
@@ -1364,7 +1364,7 @@
             padding: 60px;
         }
 
-        /* ===== ФУТЕР ===== */
+
         footer {
             background: rgba(26,26,26,0.9);
             padding: 80px 40px 30px;
@@ -1433,7 +1433,7 @@
             text-decoration: underline;
         }
 
-        /* ===== АДАПТАЦИЯ ===== */
+   
         @media (max-width: 1024px) {
             .hero h1 { font-size: 80px; }
             .hero h1 span { font-size: 100px; }
@@ -1542,8 +1542,7 @@
             }
         }
 
-        /* ===== НОВЫЕ СТИЛИ ===== */
-        /* Контейнер для поиска */
+       
         .search-container {
             position: relative;
         }
@@ -1591,7 +1590,7 @@
             margin-right: 10px;
         }
 
-        /* Красная вспышка */
+      
         .flash-overlay {
             position: fixed;
             top: 0;
@@ -1613,7 +1612,7 @@
             100% { opacity: 0; }
         }
 
-        /* Частицы курсора */
+      
         #particle-canvas {
             position: fixed;
             top: 0;
@@ -1624,7 +1623,7 @@
             z-index: 9998;
         }
 
-        /* Кнопка переключения темы */
+   
         .theme-toggle {
             background: transparent;
             border: 1px solid var(--red);
@@ -1641,7 +1640,7 @@
             color: var(--black);
         }
 
-        /* Кнопка квиза */
+
         .quiz-toggle {
             background: var(--red);
             color: white;
@@ -1659,7 +1658,7 @@
             background: var(--red-bright);
         }
 
-        /* Стили для pop-up скидки */
+    
         #modal-discount .modal-content {
             text-align: center;
         }
@@ -1710,7 +1709,7 @@
     <canvas id="particle-canvas"></canvas>
     <div class="flash-overlay" id="flash"></div>
 
-    <!-- ФОНОВАЯ АНИМАЦИЯ СЛОВ YASHA -->
+  
     <div class="word-background">
         <div class="word">YASHA</div>
         <div class="word">YASHA</div>
@@ -1720,7 +1719,7 @@
         <div class="word">YASHA</div>
     </div>
 
-    <!-- МОДАЛЬНЫЕ ОКНА -->
+
     <div id="modal-privacy" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
@@ -1771,7 +1770,7 @@
         </div>
     </div>
 
-    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ СКИДКИ -->
+  
     <div id="modal-discount" class="modal">
         <div class="modal-content">
             <span class="modal-close" onclick="closeDiscountModal()">&times;</span>
@@ -1785,7 +1784,7 @@
         </div>
     </div>
 
-    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ КВИЗА -->
+   
     <div id="modal-quiz" class="modal">
         <div class="modal-content">
             <span class="modal-close" onclick="closeQuizModal()">&times;</span>
@@ -1812,7 +1811,7 @@
         </div>
     </div>
 
-    <!-- COOKIE УВЕДОМЛЕНИЕ -->
+    
     <div id="cookie-notice" class="cookie-notice">
         <p>Мы используем cookie-файлы для улучшения работы сайта. Продолжая использование, вы соглашаетесь с <a href="#" id="cookie-policy-link">политикой конфиденциальности</a>.</p>
         <button id="cookie-accept">ПРИНЯТЬ</button>
@@ -1847,9 +1846,9 @@
             <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
         </nav>
 
-        <!-- СТРАНИЦА ГЛАВНАЯ -->
+      
         <div id="home" class="page active">
-            <!-- HERO С ВИДЕО -->
+        
             <div class="hero">
                 <video class="hero-video" autoplay muted loop playsinline>
                     <source src="https://videos.pexels.com/video-files/4503756/4503756-uhd_2732_1440_25fps.mp4" type="video/mp4">
@@ -1905,7 +1904,7 @@
             <button class="quiz-toggle" id="quiz-open">ПРОЙТИ КВИЗ</button>
         </div>
 
-        <!-- СТРАНИЦА КАТАЛОГ -->
+
         <div id="catalog" class="page">
             <div class="catalog-page">
                 <aside class="filters">
@@ -1933,7 +1932,7 @@
             </div>
         </div>
 
-        <!-- СТРАНИЦА О НАС -->
+
         <div id="about" class="page">
             <div class="about-page">
                 <div class="about-hero">
@@ -1957,7 +1956,7 @@
             </div>
         </div>
 
-        <!-- СТРАНИЦА КОНТАКТЫ -->
+   
         <div id="contacts" class="page">
             <div class="contacts-page">
                 <h2>КОНТАКТЫ</h2>
@@ -1977,7 +1976,6 @@
             </div>
         </div>
 
-        <!-- СТРАНИЦА КОРЗИНА -->
         <div id="cart" class="page">
             <div class="cart-page">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
@@ -1990,7 +1988,7 @@
             </div>
         </div>
 
-        <!-- ФУТЕР -->
+     
         <footer>
             <div class="footer-content">
                 <div class="footer-section">
@@ -2026,7 +2024,7 @@
         </footer>
     </div>
 
-    <!-- Прелоадер с 3D анимацией -->
+
     <div id="preloader">
         <canvas id="preloader-canvas"></canvas>
     </div>
@@ -2065,7 +2063,7 @@
     </script>
 
     <script type="module">
-        // Полноценный прелоадер с Three.js
+     
         import * as THREE from 'three';
 
         const canvas = document.getElementById('preloader-canvas');
@@ -2082,7 +2080,7 @@
         renderer.shadowMap.enabled = true;
         renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
-        // Освещение
+   
         const dirLight = new THREE.DirectionalLight(0xffffff, 2);
         dirLight.position.set(2, 5, 5);
         dirLight.castShadow = true;
@@ -2166,7 +2164,7 @@
 
             scene.add(group);
 
-            // Частицы
+      
             const particlesGeo = new THREE.BufferGeometry();
             const particlesCount = 800;
             const posArray = new Float32Array(particlesCount * 3);
@@ -2186,7 +2184,7 @@
             const particlesMesh = new THREE.Points(particlesGeo, particlesMat);
             scene.add(particlesMesh);
 
-            // Кольцо
+    
             const ringGeo = new THREE.TorusGeometry(3.5, 0.1, 16, 100);
             const ringMat = new THREE.MeshStandardMaterial({ color: 0xc41e1e, emissive: 0x220000, transparent: true, opacity: 0.3 });
             const ring = new THREE.Mesh(ringGeo, ringMat);
@@ -2195,7 +2193,7 @@
             ring.position.y = 1.2;
             scene.add(ring);
 
-            // Анимация
+ 
             function animate() {
                 requestAnimationFrame(animate);
 
@@ -2248,8 +2246,7 @@
     </script>
 
     <script>
-        // ========== ОСНОВНОЙ JS ==========
-        // Кастомный курсор
+    
         const cursor = document.querySelector('.cursor');
         document.addEventListener('mousemove', (e) => {
             cursor.style.left = e.clientX + 'px';
@@ -2262,7 +2259,7 @@
             }
         });
 
-        // Переключение страниц
+    
         const pages = document.querySelectorAll('.page');
         const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -2285,7 +2282,7 @@
             });
         });
 
-        // Модальные окна
+   
         const modals = {
             privacy: document.getElementById('modal-privacy'),
             terms: document.getElementById('modal-terms'),
@@ -2313,7 +2310,7 @@
             }
         });
 
-        // Открытие модалок по ссылкам
+
         document.getElementById('privacy-link')?.addEventListener('click', (e) => { e.preventDefault(); openModal('privacy'); });
         document.getElementById('terms-link')?.addEventListener('click', (e) => { e.preventDefault(); openModal('terms'); });
         document.getElementById('cookie-policy-link')?.addEventListener('click', (e) => { e.preventDefault(); openModal('privacy'); });
@@ -2323,7 +2320,7 @@
         document.getElementById('privacy-link-footer')?.addEventListener('click', (e) => { e.preventDefault(); openModal('privacy'); });
         document.getElementById('terms-link-footer')?.addEventListener('click', (e) => { e.preventDefault(); openModal('terms'); });
 
-        // Кнопки-заглушки
+    
         const devButtons = ['search-icon', 'user-icon', 'faq-link', 'sizes-link', 'care-link', 'insta-icon', 'tg-icon', 'vk-icon', 'contact-submit'];
         devButtons.forEach(id => {
             const el = document.getElementById(id);
@@ -2335,12 +2332,12 @@
             }
         });
 
-        // Категории и фичи тоже ведут на заглушку
+   
         document.querySelectorAll('.category-card, .feature-item, .value-item').forEach(el => {
             el.addEventListener('click', () => openModal('message'));
         });
 
-        // Cookie-уведомление
+    
         const cookieNotice = document.getElementById('cookie-notice');
         const cookieAccept = document.getElementById('cookie-accept');
         if (!localStorage.getItem('cookieAccepted')) {
@@ -2353,7 +2350,7 @@
             cookieNotice.style.display = 'none';
         });
 
-        // Форма подписки
+ 
         document.getElementById('newsletter-form')?.addEventListener('submit', (e) => {
             e.preventDefault();
             const email = e.target.querySelector('input[type="email"]').value;
@@ -2366,7 +2363,7 @@
             e.target.reset();
         });
 
-        // ========== КОРЗИНА ==========
+ 
         let cart = JSON.parse(localStorage.getItem('yashaCart')) || [];
 
         function saveCart() {
@@ -2388,7 +2385,7 @@
             }
             saveCart();
             alert(`Товар "${product.title}" добавлен в корзину`);
-            // Звук добавления
+ 
             playAddSound();
         }
 
@@ -2432,7 +2429,7 @@
             });
         }
 
-        // Товары
+   
         const products = [
             { id: '1', title: 'Пальто RED LABEL', price: 7990, image: 'https://images.pexels.com/photos/1082529/pexels-photo-1082529.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2', category: 'women' },
             { id: '2', title: 'Свитер BLACK', price: 3990, image: 'https://images.pexels.com/photos/2075198/pexels-photo-2075198.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2', category: 'men' },
@@ -2472,12 +2469,11 @@
                     if (product) addToCart(product);
                 });
             });
-            // Ленивая загрузка
+    
             lazyLoadImages();
         }
 
-        // ===== НОВЫЕ ФУНКЦИИ =====
-        // Красная вспышка
+    
         const flash = document.getElementById('flash');
         document.addEventListener('click', (e) => {
             flash.style.setProperty('--x', e.clientX + 'px');
@@ -2486,7 +2482,7 @@
             setTimeout(() => flash.classList.remove('active'), 400);
         });
 
-        // Частицы за курсором
+     
         const canvasParticles = document.getElementById('particle-canvas');
         const ctx = canvasParticles.getContext('2d');
         let particles = [];
@@ -2530,7 +2526,7 @@
             mouseY = e.clientY;
         });
 
-        // Умный поиск
+ 
         const searchIcon = document.getElementById('search-icon');
         const searchDropdown = document.getElementById('search-dropdown');
         searchIcon.addEventListener('click', (e) => {
@@ -2551,13 +2547,13 @@
             }
         });
 
-        // Переключатель темы
+    
         const themeToggle = document.getElementById('theme-toggle');
         themeToggle.addEventListener('click', () => {
             document.body.classList.toggle('red-theme');
         });
 
-        // Звук (для примера используем Web Audio API, чтобы не загружать файл)
+      
         let audioCtx = null;
         function playAddSound() {
             if (!audioCtx) {
@@ -2573,7 +2569,7 @@
             oscillator.stop(audioCtx.currentTime + 0.1);
         }
 
-        // Квиз
+    
         const quizModal = document.getElementById('modal-quiz');
         document.getElementById('quiz-open').addEventListener('click', () => {
             quizModal.classList.add('active');
@@ -2600,7 +2596,7 @@
             quizModal.classList.remove('active');
         }
 
-        // Pop-up скидки
+     
         function openDiscountModal() {
             modals.discount.classList.add('active');
         }
@@ -2618,7 +2614,7 @@
             closeDiscountModal();
         });
 
-        // Фильтрация и сортировка в каталоге
+ 
         const categoryCheckboxes = document.querySelectorAll('.category-filter');
         const resetFiltersBtn = document.getElementById('reset-filters');
         const sortSelect = document.getElementById('sort-select');
@@ -2652,14 +2648,13 @@
             filterAndSortProducts();
         });
 
-        // Кнопка очистки корзины
         document.getElementById('clear-cart-btn')?.addEventListener('click', () => {
             cart = [];
             saveCart();
             renderCart();
         });
 
-        // Ленивая загрузка изображений
+  
         function lazyLoadImages() {
             const images = document.querySelectorAll('.product-image');
             const observer = new IntersectionObserver((entries) => {
@@ -2678,12 +2673,12 @@
             images.forEach(img => observer.observe(img));
         }
 
-        // PWA (регистрация service worker)
+      
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration failed', err));
         }
 
-        // Инициализация
+    
         document.addEventListener('DOMContentLoaded', () => {
             renderProductGrid('featured-products');
             renderProductGrid('catalog-products');
@@ -2702,7 +2697,7 @@
             renderCart();
         });
 
-        // Анимация появления при скролле
+    
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -2721,7 +2716,7 @@
             }
         });
 
-        // Мобильное меню
+
         const menuToggle = document.getElementById('mobile-menu-toggle');
         const navLinksMenu = document.querySelector('.nav-links');
         if (menuToggle) {
@@ -2735,7 +2730,7 @@
             });
         }
 
-        // Параллакс для фоновых слов
+       
         const words = document.querySelectorAll('.word-background .word');
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
